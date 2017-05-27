@@ -1,0 +1,23 @@
+Commands used
+
+// To start the server
+python manage.py runserver
+
+// To create a controller
+python manage.py startapp <controllerName>
+
+// To create a migration script
+python manage.py makemigrations <controllerName>
+
+// To run the migration
+python manage.py migrate
+
+// To learn to use database from CLI
+python manage.py shell
+
+// To create a super admin
+python manage.py createsuperuser
+For this app,
+Username : kbadarinath
+Email    : kbadarinath@office.com
+Password : testing@123
