@@ -1,0 +1,28 @@
+from __future__ import unicode_literals
+from django.db import models
+
+class SeismicEvent(models.Model):
+	eventid    = models.IntegerField()
+	event_date = models.DateTimeField()
+	lat        = models.CharField(max_length=20)
+	lon        = models.CharField(max_length=20)
+	smajax     = models.CharField(max_length=20)
+	sminax     = models.CharField(max_length=20)
+	strike     = models.CharField(max_length=20)
+	q          = models.CharField(max_length=20)
+	depth      = models.CharField(max_length=20)
+	unc        = models.CharField(max_length=20)
+	q_1        = models.CharField(max_length=20)
+	mw         = models.CharField(max_length=20)
+	unc_1      = models.CharField(max_length=20)
+	q_2        = models.CharField(max_length=20)
+	s          = models.CharField(max_length=20)
+	mo         = models.CharField(max_length=20, null=True)
+	fac        = models.CharField(max_length=20, null=True)
+	mo_auth    = models.CharField(max_length=20, null=True)
+	mpp        = models.CharField(max_length=20, null=True)
+	mpr        = models.CharField(max_length=20, null=True)
+	mrr        = models.CharField(max_length=20, null=True)
+	mrt        = models.CharField(max_length=20, null=True)
+	mtp        = models.CharField(max_length=20, null=True)
+	mtt        = models.CharField(max_length=20, null=True)

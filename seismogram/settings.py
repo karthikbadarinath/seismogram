@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.sessions',
     'django.contrib.staticfiles',
+    'seismic_events.apps.SeismicEventsConfig',
     'users.apps.UsersConfig',
 ]
 
@@ -119,3 +120,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Override admin panel headers
+ADMIN_SITE_HEADER = "Seismogram Administration"
+ADMIN_SITE_TITLE  = "Seismogram"
